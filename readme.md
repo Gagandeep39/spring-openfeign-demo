@@ -9,7 +9,7 @@
 
 - Add @EnableFeignClient on Main clas
 - It will scan for all packages for fiegn clients
-- Add @FeignClient to make that as a fiegnclient
+- Add @FeignClient to make an interface as a fiegnclient
 
 eg.
 
