@@ -1,0 +1,20 @@
+server:
+    port: 1002
+logging:
+    level:
+        root: debug
+service:
+    name: productService
+    url: http://localhost:1001/
+
+    # Adding manual timeout for feign client
+feign:
+    client:
+        config:
+            default:
+                # Read it should wait after sending a request
+                # Uncomment Thread.sleep(2000) in rest-service to see this application crash
+                # Because we have set the max wait time to 1500 and that ervice will piprosly wait for 2000
+                readTimeout: 1500
+                # Time it should wait for making a connection
+                connectTimeout: 500

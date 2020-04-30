@@ -1,0 +1,13 @@
+POST http://localhost:1001/products
+content-type: application/json
+
+{
+    "name": "Predator",
+    "quantity": 100
+}
+
+### 
+GET http://localhost:1001/products
+
+### 
+GET http://localhost:1001/products/1

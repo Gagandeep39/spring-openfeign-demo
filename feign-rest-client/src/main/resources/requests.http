@@ -1,0 +1,15 @@
+POST http://localhost:1002/products
+Content-Type: application/json
+
+{
+  "name": "Love <3",
+  "quantity": 1
+}
+
+###
+
+GET http://localhost:1002/products
+
+###
+
+GET http://localhost:1002/products/2
